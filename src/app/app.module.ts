@@ -8,6 +8,7 @@ import { PaintingsComponent } from './paintings/paintings.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PaintingComponent } from './painting/painting.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     AuthorsComponent,
     PaintingsComponent,
     StatisticsComponent,
-    HomeComponent
+    HomeComponent,
+    PaintingComponent
   ],
   imports: [
     BrowserModule,
