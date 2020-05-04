@@ -26,6 +26,24 @@
       "style": "modernist",
       "price": 100,
       "author_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Trèsbo",
+      "description": "jol itableau",
+      "year": 2001,
+      "style": "impressionist",
+      "price": 1,
+      "author_id": "1"
+    },
+    {
+      "id": 5,
+      "name": "Trèsbo",
+      "description": "jol itableau",
+      "year": 2001,
+      "style": "impressionist",
+      "price": 1,
+      "author_id": "2"
     }
   ],
   "authors": [

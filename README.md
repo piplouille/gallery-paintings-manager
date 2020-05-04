@@ -28,9 +28,9 @@ All fields are required
 4. ~~List all the paintings inside the paintings page. Each painting should have a component 1p~~
 5. ~~List all the authors inside the authors page. When clicking on an author you will show in another page all the paintings by that author 1p~~
 6. ~~In the `painting add page` add a form with validation to add a paintings in the database.
-All fields are required, year has to be 4 chars long; use pattern validator with the pattern [0-9]{4} 1p ~~
-7. In the `authors add page` add a form with validation to add a authors in the database. 1p
-8. Replace the author_id text field with a select which is populated automatically from the author endpoint 1p
+All fields are required, year has to be 4 chars long; use pattern validator with the pattern [0-9]{4} 1p~~
+7. ~~In the `authors add page` add a form with validation to add a authors in the database. 1p~~
+8. ~~Replace the author_id text field with a select which is populated automatically from the author endpoint 1p~~
 9. In painting component if painting has price greater than 1000 euros show in the page "Expensive" with green otherwise show "Cheap" with red 1p
 10. In the statistics page show the following by each style (baroque, impresioninst, modernist): most expensive 3 paintings, oldest 3 paintings 1p
 

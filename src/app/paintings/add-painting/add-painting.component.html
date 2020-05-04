@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="">Description</label>
+        <label for="author_id">Description</label>
         <textarea  class="form-control" name="description" id="" cols="30" rows="5" 
         #description = "ngModel"
         required
@@ -61,7 +61,7 @@
     </div>
 
     <div class="form-group">
-        <label for="">Price</label>
+        <label for="price">Price</label>
         <input class="form-control" type="number" name="price" 
         #price = "ngModel"
         required
@@ -74,11 +74,15 @@
     </div>
 
     <div class="form-group">
-        <label for="">Author (id)</label>
-        <input class="form-control" type="number" name="author_id" 
-        #author_id = "ngModel"
+        <label for="author_id">Author (id)</label>
+
+        <select class="form-control" type="string" name="author_id"
+        #author_id="ngModel"
         required
         ngModel>
+            <option *ngFor="let author of authors" value={{author.id}}>{{author.name}}</option>
+        </select>
+
         <div *ngIf="author_id.invalid && (author_id.touched || author_id.dirty)">
             <div *ngIf="author_id.errors.required" class="alert alert-danger">
                 Author is required

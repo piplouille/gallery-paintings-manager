@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { PaintingService } from 'src/app/services/painting.service';
+import { Authors } from '../../models/authors';
+import { AuthorService } from '../../services/author.service';
 
 @Component({
   selector: 'app-add-painting',
@@ -9,11 +11,19 @@ import { PaintingService } from 'src/app/services/painting.service';
 export class AddPaintingComponent implements OnInit {
   @Output() productUpdate: EventEmitter<boolean> = new EventEmitter<boolean>();
   
-  constructor(private paintingService:PaintingService) { }
+  constructor(private paintingService:PaintingService, private authorService:AuthorService) { }
+
+  authors: Authors[];
 
   ngOnInit(): void {
+    this.getAuthors();
   }
 
+  getAuthors() {
+    this.authorService.getAuthors().subscribe( (authors: Authors[]) => {
+      this.authors = authors;
+    })
+  }
   processForm(form) {
     if(form.invalid){
       alert("Baddddd")
