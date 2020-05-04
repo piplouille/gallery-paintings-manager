@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PaintingComponent } from './painting/painting.component';
 import { AuthorComponent } from './author/author.component';
+import { AuthorDetailComponent } from './authors/author-detail/author-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AuthorComponent } from './author/author.component';
     StatisticsComponent,
     HomeComponent,
     PaintingComponent,
-    AuthorComponent
+    AuthorComponent,
+    AuthorDetailComponent
   ],
   imports: [
     BrowserModule,

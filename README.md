@@ -26,7 +26,7 @@ All fields are required
 3. ~~Your app will have 3 pages -> authors, paintings, statistics.
  Create the necessary components and services and add a navigation between them 1p~~
 4. ~~List all the paintings inside the paintings page. Each painting should have a component 1p~~
-5. List all the authors inside the authors page. When clicking on an author you will show in another page all the paintings by that author 1p
+5. ~~List all the authors inside the authors page. When clicking on an author you will show in another page all the paintings by that author 1p~~
 6. In the `painting add page` add a form with validation to add a paintings in the database. 
 All fields are required, year has to be 4 chars long; use pattern validator with the pattern [0-9]{4} 1p 
 7. In the `authors add page` add a form with validation to add a authors in the database. 1p

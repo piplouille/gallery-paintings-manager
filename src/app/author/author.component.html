@@ -2,6 +2,7 @@
     <div>{{author.name}}</div>
     <div class="card-body">
       <p class="card-text">{{author.bio}}</p>
+      <p><a class="btn btn-sm btn-outline-secondary" [routerLink]="[author.id]">Ses peintures</a></p>
       <div class="d-flex justify-content-between align-items-center">
         <small class="text-muted">{{author.birthdate}}</small>
       </div>
