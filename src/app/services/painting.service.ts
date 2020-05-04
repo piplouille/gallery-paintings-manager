@@ -24,4 +24,8 @@ export class PaintingService {
     }
     return this.http.get(`${this.SERVER_URL}paintings?author_id=${id}`);
   }
+
+  postPainting(painting:Paintings): any {
+    return this.http.post(`${this.SERVER_URL}paintings`, painting)
+  }
 }

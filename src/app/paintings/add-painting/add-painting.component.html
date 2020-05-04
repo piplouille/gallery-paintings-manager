@@ -1,0 +1,90 @@
+<div *ngIf="productForm.submitted" class="alert alert-info">
+    Form submited
+</div>
+
+<form #productForm = "ngForm" (ngSubmit)="processForm(productForm)">
+    <input type="hidden" ngModel name="id">
+    
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" 
+        #name="ngModel"
+        required
+        ngModel>
+        <div *ngIf="name.invalid && (name.touched || name.dirty)">
+            <div *ngIf="name.errors.required" class="alert alert-danger">
+                Name is required
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="">Description</label>
+        <textarea  class="form-control" name="description" id="" cols="30" rows="5" 
+        #description = "ngModel"
+        required
+        ngModel></textarea>
+        <div *ngIf="description.invalid && (description.touched || description.dirty)">
+            <div *ngIf="description.errors.required" class="alert alert-danger">
+                Description is required
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="year">Year</label>
+        <input class="form-control" type="number" name="year" 
+        #year="ngModel"
+        required
+        ngModel
+        pattern="[0-9]{4}">
+        <div *ngIf="year.invalid && (year.touched || year.dirty)">
+            <div *ngIf="year.errors.required" class="alert alert-danger">
+                Year is required
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="style">Style</label>
+        <select class="form-control" type="string" name="style"
+        #style="ngModel"
+        required
+        ngModel>
+          <option>baroque</option>
+          <option>impressionist</option>
+          <option>modernist</option>
+        </select>
+        <div *ngIf="style.invalid && (style.touched || style.dirty)">
+            <div *ngIf="style.errors.required" class="alert alert-danger">
+                Style is required
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Price</label>
+        <input class="form-control" type="number" name="price" 
+        #price = "ngModel"
+        required
+        ngModel>
+        <div *ngIf="price.invalid && (price.touched || price.dirty)">
+            <div *ngIf="price.errors.required" class="alert alert-danger">
+                Price is required
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="">Author (id)</label>
+        <input class="form-control" type="number" name="author_id" 
+        #author_id = "ngModel"
+        required
+        ngModel>
+        <div *ngIf="author_id.invalid && (author_id.touched || author_id.dirty)">
+            <div *ngIf="author_id.errors.required" class="alert alert-danger">
+                Author is required
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="productForm.invalid">Submit</button> 
+</form>

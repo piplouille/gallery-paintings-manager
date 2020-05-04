@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PaintingComponent } from './painting/painting.component';
 import { AuthorComponent } from './author/author.component';
 import { AuthorDetailComponent } from './authors/author-detail/author-detail.component';
+import { AddPaintingComponent } from './paintings/add-painting/add-painting.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { AuthorDetailComponent } from './authors/author-detail/author-detail.com
     HomeComponent,
     PaintingComponent,
     AuthorComponent,
-    AuthorDetailComponent
+    AuthorDetailComponent,
+    AddPaintingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
