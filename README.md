@@ -22,7 +22,7 @@ All fields are required
 
 
 1. ~~Create a new angular application 1p~~
-2. Create the classes for Painting and Author and add a json server with the endpoints: /paintings and /authors. Prefill them with some data 1p
+2. ~~Create the classes for Painting and Author and add a json server with the endpoints: /paintings and /authors. Prefill them with some data 1p~~
 3. Your app will have 3 pages -> authors, paintings, statistics.
  Create the necessary components and services and add a navigation between them 1p
 4. List all the paintings inside the paintings page. Each painting should have a component 1p

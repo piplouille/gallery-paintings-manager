@@ -1,3 +1,36 @@
 {
-    
+    "paintings": [
+        {
+            "id": 1,
+            "name": "Les Ménines",
+            "description": "Les Ménines, également connu sous l'appellation La Famille de Philippe IV, est le portrait le plus célèbre de Diego Velázquez, peint en 1656. Le tableau est présenté au musée du Prado de Madrid.",
+            "year": 1656,
+            "style": "baroque",
+            "price": 150000,
+            "author_id": 1
+        },
+        {
+            "id": 2,
+            "name": "Impression, soleil levant",
+            "description": "Impression, soleil levant est un tableau de Claude Monet conservé au musée Marmottan à Paris, dont le titre donné pour la première exposition impressionniste d'avril 1874 a donné son nom au courant de l'impressionnisme. La date d'exécution de cette marine, probablement pendant l'hiver 1872-1873, est hypothétique.",
+            "year": 1872,
+            "style": "impressionist",
+            "price": 220000,
+            "author_id": 2
+        }
+    ],
+    "authors": [
+        {
+            "id": 1,
+            "name": "Diego Vélasquez",
+            "birthdate": "6 juin 1599",
+            "bio": "Il est considéré comme l'un des principaux représentants de la peinture espagnole et l'un des maîtres de la peinture universelle."
+        },
+        {
+            "id": 2,
+            "name": "Claude Monet",
+            "birthdate": "14 novembre 1840",
+            "bio": "Il naît sous le nom d'Oscar-Claude Monet, au no 45 rue Laffitte à Paris. Sachant que l'épicerie de son père Adolphe ne prospérait pas à Paris, la famille déménage au Havre en 1845. Adolphe travaille avec Lecarde qui reprend les rênes de l'affaire à la mort de ce dernier, en 1858. La tante de Claude, restée veuve, s'occupe énormément de lui. Claude grandit ainsi dans un milieu bourgeois."
+        }
+    ]
 }
