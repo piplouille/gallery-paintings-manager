@@ -1,1 +1,23 @@
-<p>statistics works!</p>
+<h1 class="display-3">Statistics</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h1>Baroque</h1>
+        <div *ngFor="let painting of baroque">
+            <app-painting [painting]="painting"></app-painting>
+          </div>
+      </div>
+      <div class="col-sm">
+        <h1>Impressionist</h1>
+        <div *ngFor="let painting of impr">
+            <app-painting [painting]="painting"></app-painting>
+        </div>
+      </div>
+      <div class="col-sm">
+        <h1>Modernist</h1>
+        <div *ngFor="let painting of modern">
+            <app-painting [painting]="painting"></app-painting>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -25,6 +25,10 @@ export class PaintingService {
     return this.http.get(`${this.SERVER_URL}paintings?author_id=${id}`);
   }
 
+  getByStyle(style:string):Observable<any> {
+    return this.http.get(`${this.SERVER_URL}paintings?style=${style}`);
+  }
+
   postPainting(painting:Paintings): any {
     return this.http.post(`${this.SERVER_URL}paintings`, painting);
   }
