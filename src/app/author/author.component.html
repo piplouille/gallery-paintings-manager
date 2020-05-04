@@ -1,10 +1,8 @@
 <div class="card mb-4 shadow-sm">
-    <div>{{author.name}}</div>
     <div class="card-body">
+      <h5 class="card-title">{{author.name}}</h5>
+      <small class="text-muted">Naissance : {{author.birthdate}}</small>
       <p class="card-text">{{author.bio}}</p>
       <p><a class="btn btn-sm btn-outline-secondary" [routerLink]="[author.id]">Ses peintures</a></p>
-      <div class="d-flex justify-content-between align-items-center">
-        <small class="text-muted">{{author.birthdate}}</small>
-      </div>
     </div>
 </div>
