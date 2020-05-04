@@ -1,1 +1,5 @@
-<p>paintings works!</p>
+<ul class="list-group">
+    <li *ngFor="let painting of paintings" class="list-group-item">
+      {{ painting.name }} - {{ painting.style }}
+    </li>
+  </ul>
