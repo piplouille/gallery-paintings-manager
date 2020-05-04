@@ -13,6 +13,7 @@ import { AuthorComponent } from './author/author.component';
 import { AuthorDetailComponent } from './authors/author-detail/author-detail.component';
 import { AddPaintingComponent } from './paintings/add-painting/add-painting.component';
 import { FormsModule } from '@angular/forms';
+import { AddAuthorComponent } from './authors/add-author/add-author.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     PaintingComponent,
     AuthorComponent,
     AuthorDetailComponent,
-    AddPaintingComponent
+    AddPaintingComponent,
+    AddAuthorComponent
   ],
   imports: [
     BrowserModule,

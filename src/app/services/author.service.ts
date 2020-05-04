@@ -7,10 +7,15 @@ import { Authors } from '../models/authors';
 })
 export class AuthorService {
   private authors: Authors;
+  SERVER_URL = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) { }
 
   getAuthors() {
     return this.http.get('http://localhost:3000/authors');
+  }
+
+  postAuthor(author:Authors): any {
+    return this.http.post(`${this.SERVER_URL}authors`, author);
   }
 }

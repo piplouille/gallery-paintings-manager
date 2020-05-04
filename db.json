@@ -40,6 +40,12 @@
       "name": "Claude Monet",
       "birthdate": "14 novembre 1840",
       "bio": "Il naît sous le nom d'Oscar-Claude Monet, au no 45 rue Laffitte à Paris. Sachant que l'épicerie de son père Adolphe ne prospérait pas à Paris, la famille déménage au Havre en 1845. Adolphe travaille avec Lecarde qui reprend les rênes de l'affaire à la mort de ce dernier, en 1858. La tante de Claude, restée veuve, s'occupe énormément de lui. Claude grandit ainsi dans un milieu bourgeois."
+    },
+    {
+      "id": 3,
+      "name": "Laetitia",
+      "birthdate": "today",
+      "bio": "Student"
     }
   ]
 }

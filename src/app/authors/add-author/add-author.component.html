@@ -1,0 +1,48 @@
+<div *ngIf="productForm.submitted" class="alert alert-info">
+    Form submited
+</div>
+
+<form #productForm = "ngForm" (ngSubmit)="processForm(productForm)">
+    <input type="hidden" ngModel name="id">
+    
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" name="name" 
+        #name="ngModel"
+        required
+        ngModel>
+        <div *ngIf="name.invalid && (name.touched || name.dirty)">
+            <div *ngIf="name.errors.required" class="alert alert-danger">
+                Name is required
+            </div>
+        </div>
+    </div>
+        
+    <div class="form-group">
+        <label for="birthdate">Birthdate</label>
+        <input class="form-control" type="text" name="birthdate" 
+        #birthdate="ngModel"
+        required
+        ngModel>
+        <div *ngIf="birthdate.invalid && (birthdate.touched || birthdate.dirty)">
+            <div *ngIf="birthdate.errors.required" class="alert alert-danger">
+                Birthdate is required
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="bio">Biography</label>
+        <textarea  class="form-control" name="bio" id="" cols="30" rows="5" 
+        #bio = "ngModel"
+        required
+        ngModel></textarea>
+        <div *ngIf="bio.invalid && (bio.touched || bio.dirty)">
+            <div *ngIf="bio.errors.required" class="alert alert-danger">
+                Biography is required
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="productForm.invalid">Submit</button> 
+</form>

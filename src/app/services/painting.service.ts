@@ -26,6 +26,6 @@ export class PaintingService {
   }
 
   postPainting(painting:Paintings): any {
-    return this.http.post(`${this.SERVER_URL}paintings`, painting)
+    return this.http.post(`${this.SERVER_URL}paintings`, painting);
   }
 }
